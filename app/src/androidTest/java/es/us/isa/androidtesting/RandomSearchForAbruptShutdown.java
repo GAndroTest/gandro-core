@@ -35,4 +35,18 @@ public class RandomSearchForAbruptShutdown {
         testCase.executeAfter();
         System.out.println("Done!");
     }
+
+public void runTest(UiDevice mDevice, String appName) throws UiObjectNotFoundException {
+
+    INAGraph graph= INAGraphBuilder.getInstance().build(mDevice,appName);
+    ObjectiveFunction abruptShutdown=new ApplicationCrashObjectiveFunction();
+    RandomSearch algorithm=new RandomSearch(abruptShutdown,100,3);
+    TestCase testCase=algorithm.run(graph,appName);
+    System.out.println("Test case found: "+testCase);
+    System.out.println("Runnig it...");
+    testCase.executeBefore();
+    testCase.executeTest();
+    testCase.executeAfter();
+    System.out.println("Done!");
+}
 }
