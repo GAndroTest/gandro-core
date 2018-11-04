@@ -1,9 +1,8 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.testingandroid2"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
@@ -18,6 +17,7 @@ android {
     }
     lintOptions {
         checkReleaseBuilds false
+        abortOnError false
     }
 }
 
@@ -36,3 +36,17 @@ dependencies {
     // Set this dependency to build and run UI Automator tests
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
 }
+
+task createAAR(type: Copy) {
+    from file('build/outputs/aar/app-release.aar')
+    into('libs/aars')
+
+    rename('app-release.aar', 'gandro-core.aar')
+}
+task deleteAAR(type: Delete) {
+    delete 'libs/gandro-core.aar'
+}
+
+deleteAAR.dependsOn(clean)
+createAAR.dependsOn(build)
+
