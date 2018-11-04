@@ -1,10 +1,10 @@
-package es.us.isa.androidtesting;
+package es.us.isa.gandro.core;
 
 import android.support.test.uiautomator.UiObjectNotFoundException;
 
 import java.util.List;
 import java.util.Set;
-import es.us.isa.androidtesting.inagraph.actions.Action;
+import es.us.isa.gandro.core.inagraph.actions.Action;
 
 
 

@@ -1,4 +1,4 @@
-package es.us.isa.androidtesting.inagraph;
+package es.us.isa.gandro.core.inagraph;
 
 import android.support.test.uiautomator.By;
 import android.support.test.uiautomator.BySelector;
@@ -8,17 +8,13 @@ import android.support.test.uiautomator.UiObject2;
 import android.support.test.uiautomator.UiObject;
 import android.support.test.uiautomator.UiObjectNotFoundException;
 import android.support.test.uiautomator.UiSelector;
-import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import es.us.isa.androidtesting.inagraph.actions.Action;
-import es.us.isa.androidtesting.inagraph.actions.ActionFactory;
-import es.us.isa.androidtesting.inagraph.actions.ButtonAction;
-import es.us.isa.androidtesting.inagraph.actions.InputAction;
-import es.us.isa.androidtesting.inagraph.actions.TextInputGenerator;
+import es.us.isa.gandro.core.inagraph.actions.Action;
+import es.us.isa.gandro.core.inagraph.actions.ActionFactory;
 
 
 public class INAGraphBuilder {

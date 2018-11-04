@@ -1,13 +1,8 @@
-package es.us.isa.androidtesting.inagraph.actions;
+package es.us.isa.gandro.core.inagraph.actions;
 
 import android.support.test.uiautomator.UiDevice;
 import android.support.test.uiautomator.UiObject;
 import android.support.test.uiautomator.UiObjectNotFoundException;
-import android.support.test.uiautomator.UiSelector;
-import android.support.test.uiautomator.Until;
-import android.widget.RadioButton;
-
-import java.util.Random;
 
 class SpinnerInputGenerator extends InputGenerator {
     private final UiDevice device;

@@ -1,14 +1,12 @@
-package es.us.isa.androidtesting.inagraph.actions;
+package es.us.isa.gandro.core.inagraph.actions;
 
 import android.support.test.uiautomator.UiDevice;
 import android.support.test.uiautomator.UiObject;
-import android.support.test.uiautomator.UiObject2;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-import es.us.isa.androidtesting.inagraph.Node;
+import es.us.isa.gandro.core.inagraph.Node;
 
 public class ActionFactory {
 

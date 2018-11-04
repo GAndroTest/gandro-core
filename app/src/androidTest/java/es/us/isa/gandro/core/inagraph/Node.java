@@ -1,4 +1,4 @@
-package es.us.isa.androidtesting.inagraph;
+package es.us.isa.gandro.core.inagraph;
 import android.support.test.uiautomator.UiObject;
 
 import java.util.ArrayList;
@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.HashSet;
 import java.util.HashMap;
 
-import es.us.isa.androidtesting.inagraph.actions.Action;
-import es.us.isa.androidtesting.inagraph.actions.InputGenerator;
+import es.us.isa.gandro.core.inagraph.actions.Action;
+import es.us.isa.gandro.core.inagraph.actions.InputGenerator;
 
 public class Node {
     Set<UiObject> controls;

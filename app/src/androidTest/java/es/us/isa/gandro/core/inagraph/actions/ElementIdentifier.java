@@ -1,4 +1,4 @@
-package es.us.isa.androidtesting.inagraph.actions;
+package es.us.isa.gandro.core.inagraph.actions;
 
 import android.support.test.uiautomator.By;
 import android.support.test.uiautomator.BySelector;
@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 

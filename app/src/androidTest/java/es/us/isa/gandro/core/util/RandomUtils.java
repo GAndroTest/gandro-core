@@ -1,4 +1,4 @@
-package es.us.isa.androidtesting.util;
+package es.us.isa.gandro.core.util;
 
 import android.support.test.espresso.core.internal.deps.guava.base.Strings;
 

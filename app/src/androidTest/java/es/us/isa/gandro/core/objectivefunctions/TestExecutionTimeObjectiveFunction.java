@@ -1,6 +1,6 @@
-package es.us.isa.androidtesting.objectivefunctions;
+package es.us.isa.gandro.core.objectivefunctions;
 
-import es.us.isa.androidtesting.TestCase;
+import es.us.isa.gandro.core.TestCase;
 
 /**
  * Created by japar on 18/03/2018.

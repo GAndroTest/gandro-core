@@ -1,4 +1,4 @@
-package es.us.isa.androidtesting.inagraph.actions;
+package es.us.isa.gandro.core.inagraph.actions;
 
 import android.support.test.uiautomator.UiObject;
 

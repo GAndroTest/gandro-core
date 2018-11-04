@@ -1,11 +1,9 @@
-package es.us.isa.androidtesting.inagraph.actions;
+package es.us.isa.gandro.core.inagraph.actions;
 
 import android.support.test.uiautomator.UiObject;
 import android.support.test.uiautomator.UiObjectNotFoundException;
 
-import java.util.Random;
-
-import es.us.isa.androidtesting.util.RandomUtils;
+import es.us.isa.gandro.core.util.RandomUtils;
 
 /**
  * Created by japar on 18/03/2018.

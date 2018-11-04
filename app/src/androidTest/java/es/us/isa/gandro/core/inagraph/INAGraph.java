@@ -1,11 +1,11 @@
-package es.us.isa.androidtesting.inagraph;
+package es.us.isa.gandro.core.inagraph;
 
 import android.support.test.uiautomator.UiObjectNotFoundException;
 
 import java.util.List;
 import java.util.Set;
 
-import es.us.isa.androidtesting.inagraph.actions.Action;
+import es.us.isa.gandro.core.inagraph.actions.Action;
 
 /**
  * Created by japar on 17/03/2018.
