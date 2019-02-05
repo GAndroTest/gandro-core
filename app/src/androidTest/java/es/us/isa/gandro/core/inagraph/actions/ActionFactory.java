@@ -34,7 +34,7 @@ public class ActionFactory {
     public static List<Action> createRadioActions(Node node, UiDevice device) {
         RadioButtonInputGenerator generator = new RadioButtonInputGenerator();
         List<Action> result = new ArrayList<>();
-        List<UiObject> buttons = ElementIdentifier.findElements(device, "android.widget.RadioButton");
+        List<UiObject> buttons = ElementIdentifier.findElements(device, "android.widget.RadioGroup");
         for (UiObject input : buttons) {
             result.add(new RadioButtonAction(input, generator));
             node.getControls().add(input);
@@ -42,13 +42,11 @@ public class ActionFactory {
         return result;
     }
 
-    public static List<Action> createcheckBoxActions(Node node, UiDevice device) {
-
-        CheckBoxInputGenerator generator = new CheckBoxInputGenerator();
+    public static List<Action> createCheckBoxActions(Node node, UiDevice device) {
         List<Action> result = new ArrayList<>();
         List<UiObject> buttons = ElementIdentifier.findElements(device, "android.widget.CheckBox");
         for (UiObject input : buttons) {
-            result.add(new CheckBoxAction(input, generator));
+            result.add(new CheckBoxAction(input));
             node.getControls().add(input);
         }
         return result;

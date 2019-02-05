@@ -1,16 +1,27 @@
 package es.us.isa.gandro.core.inagraph.actions;
 
+
 import android.support.test.uiautomator.UiObject;
+import android.support.test.uiautomator.UiObjectNotFoundException;
 
-class CheckBoxAction extends InputAction {
+public class CheckBoxAction extends Action {
+    String targetText;
+    String targetClass;
+    public CheckBoxAction(UiObject target) {
+        super(target);
+        targetText="";
+        targetClass="";
+    }
 
-
-    public CheckBoxAction(UiObject target, InputGenerator generator) {
-        super(target, generator);
+    @Override
+    public void perform() throws UiObjectNotFoundException {
+        targetText=target.getText();
+        targetClass=target.getClassName();
+        this.target.click();
     }
 
     @Override
     public String toString() {
-        return "clicking on check boxes";
+        return "Click CheckBox: " + targetText;
     }
 }
