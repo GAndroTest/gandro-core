@@ -22,6 +22,8 @@ android {
 }
 
 dependencies {
+    implementation "net.sf.extjwnl:extjwnl:1.9.1"
+    implementation "net.sf.extjwnl:extjwnl-data-wn31:1.2"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'

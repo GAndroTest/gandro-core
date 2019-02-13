@@ -64,7 +64,7 @@ public class INAGraphBuilder {
         node.getAvailableActions().addAll(ActionFactory.createButtonActions(node, device));
 
         node.getAvailableActions().addAll(ActionFactory.createRadioActions(node, device));
-        node.getAvailableActions().addAll(ActionFactory.createcheckBoxActions(node, device));
+        node.getAvailableActions().addAll(ActionFactory.createCheckBoxActions(node, device));
         node.getAvailableActions().addAll(ActionFactory.createSelectsActions(node, device));
         node.getAvailableActions().addAll(ActionFactory.createDatesActions(node, device));
 

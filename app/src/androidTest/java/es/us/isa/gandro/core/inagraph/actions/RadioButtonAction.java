@@ -2,7 +2,7 @@ package es.us.isa.gandro.core.inagraph.actions;
 
 import android.support.test.uiautomator.UiObject;
 
-class RadioButtonAction extends InputAction {
+public class RadioButtonAction extends InputAction {
 
 
     public RadioButtonAction(UiObject target, InputGenerator generator) {

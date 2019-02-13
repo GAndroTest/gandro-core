@@ -5,6 +5,7 @@ import android.support.test.uiautomator.UiObjectNotFoundException;
 
 import java.util.Random;
 
+import es.us.isa.gandro.core.dictionary.DictionaryBasedValueGenerator;
 import es.us.isa.gandro.core.util.RandomUtils;
 
 /**
@@ -15,11 +16,10 @@ public class TextInputGenerator extends InputGenerator {
 
 
     public void generateInput(UiObject object) {
-        //for the moment we'll generate random texts of random length.
-        String text = RandomUtils.randomText(new Random().nextInt());
         try {
-            object.setText(text);
-        } catch (UiObjectNotFoundException e) {
+            DictionaryBasedValueGenerator dictionary = new DictionaryBasedValueGenerator(1,1);
+            object.setText(dictionary.generate().toString());
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
